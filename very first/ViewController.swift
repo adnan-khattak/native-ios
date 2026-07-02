@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleUpdate: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleUpdate.text = "design link"
+        titleUpdate.text = "design link text"
     }
 
 
