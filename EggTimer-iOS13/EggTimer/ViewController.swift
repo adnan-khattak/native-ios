@@ -11,9 +11,10 @@ import UIKit
 class ViewController: UIViewController {
     let eggDict = ["Soft": 5, "Medium": 8, "Hard": 12]
     var secondsPassed = 0
-    let totalTime = eggDict[hardness]
     var timer = Timer()
+    @IBOutlet weak var progressBar: UIProgressView!
     @IBAction func hardnessSelected(_ sender: UIButton) {
+        progressBar.progress = 1.0
         let hardness = sender.currentTitle!
         
         timer = Timer.scheduledTimer(timeInterval: 1.0,
